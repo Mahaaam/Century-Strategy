@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نقشه قرن و استراتژی قدرت</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="landing-page" class="page active">
+        <div class="hero-container">
+            <picture>
+                <source media="(max-width: 768px)" srcset="Mobile.png">
+                <source media="(min-width: 769px)" srcset="desktop.png">
+                <img src="desktop.png" alt="نقشه قرن و استراتژی قدرت" class="hero-image">
+            </picture>
+            <div class="hero-overlay">
+                <button class="enter-btn" onclick="navigateToIndex()">ورود</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="index-page" class="page">
+        <div id="particles-index"></div>
+        <div class="container">
+            <div class="guide-text">
+                <p>برای درک کامل‌تر تحلیلها، پیشنهاد می‌گردد مطالب از مرحله اول تا مرحله ششم به ترتیب مطالعه شود.</p>
+            </div>
+            
+            <div class="author-credit">
+                <span class="author-text">نویسنده: محمود محامی</span>
+            </div>
+            
+            <div class="analysis-list">
+                <div class="analysis-item" onclick="navigateToAnalysis(1)">
+                    <span class="analysis-number">مرحله اول</span>
+                    <span class="analysis-title">چرا آمریکا برای حفظ جایگاه ابرقدرتی، به ایران نیاز دارد؟</span>
+                </div>
+                <div class="analysis-item" onclick="navigateToAnalysis(2)">
+                    <span class="analysis-number">مرحله دوم</span>
+                    <span class="analysis-title">چرا این کشور پیش از هر تقابل جدی، سراغ کشور ونزوئلا رفت؟</span>
+                </div>
+                <div class="analysis-item" onclick="navigateToAnalysis(3)">
+                    <span class="analysis-number">مرحله سوم</span>
+                    <span class="analysis-title">نقشه واقعی واشنگتن در آمریکای جنوبی چیست؟</span>
+                </div>
+                <div class="analysis-item" onclick="navigateToAnalysis(4)">
+                    <span class="analysis-number">مرحله چهارم</span>
+                    <span class="analysis-title">قشون‌کشی نظامی آمریکا به خاورمیانه؛ بازدارندگی یا بازپس‌گیری کنترل؟</span>
+                </div>
+                <div class="analysis-item" onclick="navigateToAnalysis(5)">
+                    <span class="analysis-number">مرحله پنجم</span>
+                    <span class="analysis-title">خط قرمز واقعی آمریکا چیست و چه اتفاقی می‌تواند این کشور را به آغاز جنگ وادار کند؟</span>
+                </div>
+                <div class="analysis-item" onclick="navigateToAnalysis(6)">
+                    <span class="analysis-number">مرحله ششم</span>
+                    <span class="analysis-title">و در نهایت، تقابل ایران و آمریکا به چه سمتی حرکت می‌کند؟</span>
+                </div>
+            </div>
+            
+            <button class="back-btn" onclick="navigateToLanding()">بازگشت به صفحه اصلی</button>
+        </div>
+    </div>
+
+    <div id="analysis-page" class="page">
+        <div id="particles-analysis"></div>
+        <div class="analysis-container">
+            <button class="back-btn" onclick="navigateToIndex()">بازگشت به فهرست</button>
+            <div id="analysis-content" class="content"></div>
+            <button class="back-btn" onclick="navigateToIndex()" style="margin-top: 40px;">بازگشت به فهرست</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+</body>
+</html>
